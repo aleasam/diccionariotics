@@ -1,0 +1,38 @@
+   <%= render 'buscar'%>
+
+
+<h4>Terminos existentes</h4>
+
+<center><table class="table table-condensed">
+  <tr>
+    <th>Nombre</th>
+    <th class="hidden-phone">Resumen</th>
+    <th>Detalle</th>
+    <th class="hidden-phone">Categoria</th>
+    <th class="hidden-phone">Experto</th>
+    <th class="hidden-phone">Creacion</th>
+    <th class="hidden-phone">Actulizacion</th>
+    <th>Opciones</th>
+
+  </tr>
+
+<% @terminos.each do |termino| %>
+  <tr>
+    <td><%= termino.nombre %></td>
+    <td class="hidden-phone"><%= termino.descripcion_r %></td>
+    <td><%= termino.descripcion_d %></td>
+    <td class="hidden-phone"><%= termino.categoria.nombre %></td>
+    <td class="hidden-phone"><%= termino.user.name %></td>
+    <td class="hidden-phone"><%= termino.created_date.strftime("%d/%b/%Y") %></td>
+    <td class="hidden-phone"><%= termino.updated_date.strftime("%d/%b/%Y") %></td>
+    <td><%= link_to edit_termino_path(termino),class: 'btn-mini btn-success btn' do%>
+      <i class="icon-edit"></i> Editar
+      <% end %>
+    <%= link_to termino, confirm: 'Esta seguro de Eliminar este Termino?', disable_with: 'Borrando...', method: :delete,class: 'btn-mini btn-danger btn' do %>
+    <i class="icon-trash"></i>Borrar
+    <% end %>
+  </td>
+  </tr>
+  <% end %>
+
+</table></center>

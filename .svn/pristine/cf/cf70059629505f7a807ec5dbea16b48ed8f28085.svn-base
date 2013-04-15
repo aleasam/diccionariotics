@@ -1,0 +1,26 @@
+
+<h1>Listar categorias</h1>
+
+<center><table class= "table table-bordered">
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion</th>
+    <th>Fecha Creacion</th>
+    <th>Fecha Actulizacion</th>
+    <th>Opciones</th>
+  </tr>
+
+<% @categorias.each do |categoria| %>
+  <tr>
+    <td><%= categoria.nombre %></td>
+    <td><%= categoria.descripcion %></td>
+    <td><%= categoria.created_date.strftime("%d-%b-%Y")%></td>
+    <td><%= categoria.updated_date.strftime("%b %e, %Y")%></td>
+    <td><%= link_to 'Editar', edit_categoria_path(categoria),:class=> "btn btn-mini" %>
+    <%= link_to 'Borrar', categoria, method: :delete,:class=> "btn btn-mini", data: { confirm: 'Esta seguro de eliminar esta categoria?' } %></td>
+  </tr>
+<% end %>
+</table></center>
+
+<br />
+

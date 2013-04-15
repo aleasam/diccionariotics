@@ -1,0 +1,5 @@
+class Solicitud < ActiveRecord::Base
+  attr_accessible :created_date, :nombre
+  validates_presence_of :nombre, :with => /^[a-zA-Z\d ]*$/i,:message => "Solo puede contener Numeros o letras."
+  validates :nombre,:uniqueness =>{:case_sensitive => false, :message=>"Ya se ha hecho la solicitud del Termino %{value} "}
+ end

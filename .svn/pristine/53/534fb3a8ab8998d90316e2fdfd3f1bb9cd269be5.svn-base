@@ -1,0 +1,19 @@
+<h1>Send Email</h1>
+<center>
+	<%= form_tag("/sendmail",:class=>"form-search", :method => "get") do %>
+<div class="input-append">
+
+	<p><label for="email_subject">Asunto</label>:
+<%= text_field 'email', 'subject' %></p>
+<p><label for="email_recipient">Remitente</label>:
+<%= text_field 'email', 'recipient' %></p>
+<p><label for="email_message">Mensaje</label><br/>
+<%= text_area 'email', 'message' %></p>
+
+	  <%= submit_tag("Enviar", :class=>"btn btn-primary") %>  
+	  <i class="icon-search"></i>
+ </div>
+
+
+	
+<% end %> </center>

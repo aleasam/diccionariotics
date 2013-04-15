@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @experto.nombre %>
+</p>
+
+<p>
+  <b>Apellido:</b>
+  <%= @experto.apellido %>
+</p>
+
+<p>
+  <b>Correo:</b>
+  <%= @experto.correo %>
+</p>
+
+<p>
+  <b>Cargo:</b>
+  <%= @experto.cargo %>
+</p>
+
+<p>
+  <b>Psw:</b>
+  <%= @experto.psw %>
+</p>
+
+<p>
+  <b>Created date:</b>
+  <%= @experto.created_date %>
+</p>
+
+<p>
+  <b>Updated date:</b>
+  <%= @experto.updated_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_experto_path(@experto) %> |
+<%= link_to 'Back', expertos_path %>

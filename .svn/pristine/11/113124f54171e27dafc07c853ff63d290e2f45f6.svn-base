@@ -1,0 +1,54 @@
+<%= simple_form_for(@termino) do |f| %>
+  <% if @termino.errors.any? %>
+
+    
+
+
+    <div class="alert alert-error">
+      <h3><%= pluralize(@termino.errors.count, "error") %> No se puede guardar este termino:</h3>
+
+      <ul>
+      <% @termino.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+
+
+    <%= f.label :nombre,@termino.nombre %>
+    <%= f.text_field :nombre %><br />
+       <%# raise "Punto de prueba #{@termino.nombre}" %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion_r %>
+    <%= f.text_field :descripcion_r %><br />
+  </div>
+  <div class="field">
+    <%= f.label :descripcion_d %>
+    <%= f.text_field :descripcion_d %><br />
+  </div>
+  <div class="field">
+    <%= f.label :categoria_id %>
+    <%= f.collection_select(:categoria_id,Categoria.all, :id, :nombre) %><br />
+    
+  </div>
+  <div class="field">
+    <%= f.label :experto_id %>
+    <%= f.collection_select(:experto_id,User.all, :id, :name) %><br />
+  </div>
+  <div class="field">
+    <%= f.label :Fecha_De_Creacion %>
+    <%= f.date_select :created_date %><br />
+  </div>
+  <div class="field">
+    <%= f.label :Fecha_De_Actualizacion %>
+    <%= f.date_select :updated_date %><br />
+  </div>
+  <div class="actions">
+    <%= f.button :submit, "Crear Termino", :class => 'btn-primary' %>
+    
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<%= form_for(@solicitud) do |f| %>
+  
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= f.label :created_date %><br />
+    <%= f.date_select :created_date %>
+  </div>
+
+<% end %>

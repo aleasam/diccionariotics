@@ -1,0 +1,34 @@
+
+<h4>Categorias de terminos</h4>
+
+<center><table class= "table table-bordered">
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion</th>
+    <th class="hidden-phone">Fecha Creacion</th>
+    <th class="hidden-phone">Fecha Actulizacion</th>
+    <th>Opciones</th>
+  </tr>
+
+<% @categorias.each do |categoria| %>
+  <tr>
+    <td><%= categoria.nombre %></td>
+    <td><%= categoria.descripcion %></td>
+    <td class="hidden-phone"><%= categoria.created_date.strftime("%d/%b/%Y")%></td>
+    <td class="hidden-phone"><%= categoria.updated_date.strftime("%d/%b/%Y")%></td>
+    <td><%= link_to edit_categoria_path(categoria),class: 'btn-mini btn-success btn' do%>
+      <i class="icon-edit"></i> Editar
+      <% end %>
+    <%= link_to categoria, confirm: 'Esta seguro de Eliminar esta categoria?', disable_with: 'Borrando...', method: :delete, class: 'btn-mini btn-danger btn' do %>
+    <i class="icon-trash"></i>Borrar
+    <% end %>
+  </td>
+
+
+
+  </tr>
+<% end %>
+</table></center>
+
+<br />
+

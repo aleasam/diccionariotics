@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @termino.nombre %>
+</p>
+
+<p>
+  <b>Descripcion r:</b>
+  <%= @termino.descripcion_r %>
+</p>
+
+<p>
+  <b>Descripcion d:</b>
+  <%= @termino.descripcion_d %>
+</p>
+
+<p>
+  <b>Categoria:</b>
+  <%= @termino.categoria_id %>
+</p>
+
+<p>
+  <b>Experto:</b>
+  <%= @termino.experto_id %>
+</p>
+
+<p>
+  <b>Created date:</b>
+  <%= @termino.created_date %>
+</p>
+
+<p>
+  <b>Updated date:</b>
+  <%= @termino.updated_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_termino_path(@termino) %> |
+<%= link_to 'Back', terminos_path %>

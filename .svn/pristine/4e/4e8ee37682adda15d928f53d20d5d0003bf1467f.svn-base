@@ -1,0 +1,29 @@
+<h4>Expertos tematicos registrados</h4>
+<div class="span8">
+<table class="table table-condensed">
+   <tr>
+      <th>Ususario</th>
+      
+      <th>Role</th>
+      <th>Opciones</th>
+     
+    </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= link_to user.name, user %></td>
+      
+     
+      <td><%= user.roles.first.name.titleize unless user.roles.first.nil? %></td>
+      <td>
+        <a data-toggle="modal" href="#role-options-<%= user.id %>" class="btn btn-mini" type="btn"><i class="icon-edit"></i>Editar</a>
+        <%= render user %>
+      
+       <%= link_to("Borrar", user_path(user), :data => { :confirm => "Esta Seguro de Borrar este usuario?" }, :method => :delete, :class => 'btn btn-mini') unless user == current_user %>
+     </td>
+    </tr>
+  <% end %>
+</table>
+</div >
+
+

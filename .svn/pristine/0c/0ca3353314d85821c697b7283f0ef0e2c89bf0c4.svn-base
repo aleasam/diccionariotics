@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @categoria.nombre %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @categoria.descripcion %>
+</p>
+
+<p>
+  <b>Created date:</b>
+  <%= @categoria.created_date %>
+</p>
+
+<p>
+  <b>Updated date:</b>
+  <%= @categoria.updated_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_categoria_path(@categoria) %> |
+<%= link_to 'Back', categorias_path %>

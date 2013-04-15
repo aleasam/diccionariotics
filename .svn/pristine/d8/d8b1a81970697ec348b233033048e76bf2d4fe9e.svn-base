@@ -1,0 +1,38 @@
+<form accept-charset="UTF-8" action="/buscar" method="get">
+  <center><label for="q">Termino a buscar :</label>
+  <input id="q" name="q" type="text" />
+  <input name="commit" type="submit" value="buscar" />
+</center></form>
+
+<h1>Listar terminos</h1>
+
+<center><table class="table table-bordered">
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion r</th>
+    <th>Descripcion d</th>
+    <th>Categoria</th>
+    <th>Experto</th>
+    <th>Created date</th>
+    <th>Updated date</th>
+    <th></th>
+  </tr>
+
+
+
+<% @terminos.each do |termino| %>
+  <tr>
+    <td><%= termino.nombre %></td>
+    <td><%= termino.descripcion_r %></td>
+    <td><%= termino.descripcion_d %></td>
+    <td><%= termino.categoria_id %></td>
+    <td><%= termino.experto_id %></td>
+    <td><%= termino.created_date %></td>
+    <td><%= termino.updated_date %></td>
+    <td class="btn btn-mini"><%= link_to 'Editar', edit_termino_path(termino) %></td>
+    <td class="btn btn-mini"><%= link_to 'Borrar', termino, method: :delete, data: { confirm: 'Esta seguro de Eliminar este Termino?' } %></td>
+  </tr>
+<% end %>
+</table></center>
+
+<br />

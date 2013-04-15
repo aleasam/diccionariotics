@@ -1,0 +1,37 @@
+
+<%if @solicitudes.count==0%>
+  <h3>Usted no tiene solicitudes pendientes</h3>
+<%else%>
+
+<h3>Usted Tiene <%=@solicitudes.count%> Solicitudes Pendientes</h3>
+<center>
+ <table class="table table-condensed"> 
+  <tr>
+    <th>Nombre</th>
+    <th>Fecha de solicitud</th>
+    <th>Opciones</th>
+
+  
+  </tr>
+
+<% @solicitudes.each do |solicitud| %>
+  <tr>
+    <td><%= solicitud.nombre %></td>
+    <td><%= solicitud.created_at.strftime("%d/%b/%Y") %></td>
+    <td><%= link_to new_termino_path(:nombre => solicitud.nombre),class: 'btn-mini btn-success btn' do%>
+    <i class="icon-edit"></i>Añadir
+    <% end %>
+    
+    <%= link_to solicitud, confirm: 'Esta seguro?', disable_with: 'Borrando...', method: :delete, class: 'btn-mini btn-danger btn' do%>
+    <i class=" icon-trash"></i>Borrar
+<% end %>
+
+  </td>
+  </tr>
+ 
+<% end %>
+</table></center>
+
+
+
+<%end%>

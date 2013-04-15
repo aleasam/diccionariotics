@@ -1,0 +1,11 @@
+
+<center>
+	<%= form_tag("/solicitudes/new", :method => "get") do %>
+
+	  <%= label_tag(:q, "") %>
+	  <%= text_field_tag(:q,@termino) %>
+	<p> <%= submit_tag("Solicitar", :class=>"btn btn-inverse") %> 
+	<%= link_to("cancelar", root_path, :data => { :confirm => "No se enviaran datos" }, :class => 'btn btn-inverse') %></p>
+
+	
+<% end %> </center>

@@ -1,0 +1,15 @@
+
+
+<p>
+  <b>Nombre:</b>
+  <%= @solicitud.nombre %>
+</p>
+
+<p>
+  <b>Created date:</b>
+  <%= @solicitud.created_date %>
+</p>
+
+
+<%= link_to 'Editar', edit_solicitud_path(@solicitud) %> |
+<%= link_to 'Atras', solicitudes_path %>

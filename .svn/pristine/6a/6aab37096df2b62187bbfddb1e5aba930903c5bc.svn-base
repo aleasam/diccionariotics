@@ -1,0 +1,36 @@
+<ul class="nav nav-pills">
+  <li class="active"><%= link_to "Inicio", root_path, :class => 'brand' %><li>
+</ul>
+
+<ul class="nav nav-pills">
+  <% if user_signed_in? %>
+    <li>
+    <li class="active"><%= link_to 'Salir', destroy_user_session_path, :method=>'delete' %></li>
+    </li>
+  <% else %>
+</ul>
+
+<ul class="nav nav-pills">
+    <li class="active"><%= link_to 'Editor', new_user_session_path %></li>
+  <% end %>
+</ul>
+
+<ul class="nav nav-pills">
+  <% if user_signed_in? %>
+    <li class="active"><%= link_to 'Editar Cuenta', edit_user_registration_path %></li>
+</ul>
+
+<ul class="nav nav-pills"> 
+   <% if current_user.has_role? :admin %>
+      <li class="active"><%= link_to 'Admin Roles', root_path %></li>
+    <% end %>
+  <% else %>
+</ul>
+
+<ul class="nav nav-pills"> 
+    <% if user_signed_in? %>
+      <li class="nav nav-pills"><%= link_to 'Registrar Nuevo Usuario', new_user_registration_path %></li>
+    <% else %>
+    <% end %>
+  <% end %>
+</ul>

@@ -1,0 +1,25 @@
+<p id="notice"><%=notice%></p>
+<div align="center">  
+<h3>Busqueda...</h3>
+<div class="span8">
+<table class="table table-condensed">
+
+  <tr class="success">
+    <th>Nombre</th>
+
+   <th>Definicion</th> 
+    
+      
+  </tr>
+ 
+<% @terminos.each do |termino| %>
+  <tr class="success">
+    <td><%= termino.nombre %></td>
+    
+    <td><%= termino.descripcion_d %></td>
+  
+  </tr>
+<% end %>
+</table></center>
+
+</div>

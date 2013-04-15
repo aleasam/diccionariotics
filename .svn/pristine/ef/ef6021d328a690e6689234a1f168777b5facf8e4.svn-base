@@ -1,0 +1,13 @@
+<h3 class="text-error">El termino no se encuentra registrado.</h3>
+<%= simple_form_for(@solicitud) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+  	
+    <%= f.input :nombre %> 
+     
+    <%= f.button :submit,"Solicitar", :class=>'btn btn-primary' %>
+    <%= link_to("cancelar", root_path, :class => 'btn btn-inverse' ,:data => { :confirm => "No se enviaran datos" }) %>
+  </div>
+<% end %>
+

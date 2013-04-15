@@ -1,0 +1,46 @@
+<%= form_for(@experto) do |f| %>
+  <% if @experto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@experto.errors.count, "error") %> prohibited this experto from being saved:</h2>
+
+      <ul>
+      <% @experto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido %><br />
+    <%= f.text_field :apellido %>
+  </div>
+  <div class="field">
+    <%= f.label :correo %><br />
+    <%= f.text_field :correo %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo %><br />
+    <%= f.text_field :cargo %>
+  </div>
+  <div class="field">
+    <%= f.label :psw %><br />
+    <%= f.password_field :psw %>
+  </div>
+  <div class="field">
+    <%= f.label :created_date %><br />
+    <%= f.date_select :created_date %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_date %><br />
+    <%= f.date_select :updated_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

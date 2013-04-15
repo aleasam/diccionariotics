@@ -1,0 +1,13 @@
+class AdministradorController < PrivadoController
+	before_filter :authenticate_user!
+	  
+		 def index
+			 @solicitudes=Solicitud.all
+			 
+			 #raise "busqueda con tilde #{@user.name}"
+			 #@termino=Termino.new
+			 
+	end
+end
+
+	 

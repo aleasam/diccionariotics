@@ -1,0 +1,33 @@
+   <%= render 'buscar'%>
+
+
+<h4>Terminos existentes</h4>
+
+<center><table class="table table-bordered">
+  <tr>
+    <th>Nombre</th>
+    <th>Resumen</th>
+    <th>Detalle</th>
+    <th>Categoria</th>
+    <th>Experto</th>
+    <th>Fecha Creacion</th>
+    <th>Actulizacion</th>
+    <th>Opciones</th>
+  </tr>
+
+<% @terminos.each do |termino| %>
+  <tr>
+    <td><%= termino.nombre %></td>
+    <td><%= termino.descripcion_r %></td>
+    <td><%= termino.descripcion_d %></td>
+    <td><%= termino.categoria_id %></td>
+    <td><%= termino.experto_id %></td>
+    <td><%= termino.created_date.strftime("%b %e, %Y") %></td>
+    <td><%= termino.updated_date.strftime("%b %e, %Y") %></td>
+    <td><%= link_to 'Editar', edit_termino_path(termino),:class=>"btn btn-mini"%>
+    <%= link_to 'Borrar', termino, method: :delete,:class=>"btn btn-mini", data: { confirm: 'Esta seguro de Eliminar este Termino?' } %></td>
+  </tr>
+<% end %>
+</table></center>
+
+<br />

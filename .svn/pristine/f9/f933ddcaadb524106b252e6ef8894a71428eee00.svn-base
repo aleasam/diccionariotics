@@ -1,0 +1,27 @@
+<h1>Listing solicitudes</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Fecha de solicitud</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @solicitudes.each do |solicitud| %>
+  <tr>
+    <td><%= solicitud.nombre %></td>
+    <td><%= solicitud.created_date %></td>
+    <td><%= link_to '', solicitud %></td>
+    
+     <td class=" btn btn-mini" >  <%= link_to 'Agregar', new_termino_path(:nombre => solicitud.nombre) %></td>
+    <td class=" btn btn-mini"><%= link_to 'Borrar', solicitud, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% #raise "Punto de prueba #{@termino}" %>
+
+  </tr>
+ 
+<% end %>
+</table>
+
+<br />

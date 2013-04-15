@@ -1,0 +1,29 @@
+%= render 'busqueda'%>
+
+<div align="center">  
+
+
+<h4>Busqueda...</h4>
+<center>
+<div class="span8">
+
+  <table class="table table-condensed">
+
+  <tr class="success">
+    <th><center>Nombre</center> </th>
+
+    <th><center>Definicion</center></th>
+
+  </tr>
+ 
+<% @terminos.each do |termino| %>
+  <tr class="success">
+    <td><%= termino.nombre %></td>
+
+    <td><%= termino.descripcion_d %></td>
+  
+  </tr>
+<% end %>
+</table>
+
+</div></center>

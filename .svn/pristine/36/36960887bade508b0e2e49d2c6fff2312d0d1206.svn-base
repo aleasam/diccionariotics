@@ -1,0 +1,8 @@
+<h2>El termino que busca no se encuentra registrado</h2>
+<%= link_to 'Crear Nuevo Termino', new_termino_path %>
+<%= link_to 'Buscar de nuevo', busqueda_index_path %>
+
+
+
+
+

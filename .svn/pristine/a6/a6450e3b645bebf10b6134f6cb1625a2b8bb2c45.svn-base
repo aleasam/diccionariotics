@@ -1,0 +1,49 @@
+<%= form_for(@termino) do |f| %>
+  <% if @termino.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@termino.errors.count, "error") %> prohibited this termino from being saved:</h2>
+
+      <ul>
+      <% @termino.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+
+    <%= f.label :nombre,@termino.nombre %><br />
+    <%= f.text_field :nombre %>
+       <%# raise "Punto de prueba #{@termino.nombre}" %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion_r %><br />
+    <%= f.text_field :descripcion_r %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion_d %><br />
+    <%= f.text_field :descripcion_d %>
+  </div>
+  <div class="field">
+    <%= f.label :categoria_id %><br />
+    <%= f.collection_select(:categoria_id,Categoria.all, :id, :nombre) %>
+    
+  </div>
+  <div class="field">
+    <%= f.label :experto_id %><br />
+
+    <%= f.collection_select(:experto_id,Experto.all, :id, :nombre) %>
+  </div>
+  <div class="field">
+    <%= f.label :created_date %><br />
+    <%= f.date_select :created_date %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_date %><br />
+    <%= f.date_select :updated_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

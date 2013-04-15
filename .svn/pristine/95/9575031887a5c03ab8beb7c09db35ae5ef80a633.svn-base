@@ -1,0 +1,11 @@
+class Experto < ActiveRecord::Base
+  attr_accessible :apellido, :cargo, :correo, :created_date, :nombre, :psw, :updated_date
+  validates_presence_of :correo, :nombre, :message=> 'No lo puedes dejar en blanco'
+  validates :correo,   
+            :presence => true,   
+            :uniqueness => true,   
+            :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i }  
+
+   has_many :terminos #, :inverse_of =>expertos
+
+end

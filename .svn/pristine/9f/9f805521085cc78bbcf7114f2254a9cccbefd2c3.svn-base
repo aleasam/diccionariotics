@@ -1,0 +1,34 @@
+class UsersController < PrivadoController
+  before_filter :authenticate_user!
+
+  def index
+     authorize! :index, @user, :message => 'No es un administrador.'
+     @users = User.all
+  end
+
+  def show
+    @user = User.find(params[:id])
+  end
+  
+  def update
+    authorize! :update, @user, :message => 'No es un administrador.'
+    @user = User.find(params[:id])
+    if @user.update_attributes(params[:user], :as => :admin)
+      Notificacion.sendmail.deliver
+      redirect_to users_path, :notice => "Usuario actualizado."
+    else
+      redirect_to users_path, :alert => "No tiene permisos para actualizar."
+    end
+  end
+    
+  def destroy
+    authorize! :destroy, @user, :message => 'No es un administrador.'
+    user = User.find(params[:id])
+    unless user == current_user
+      user.destroy
+      redirect_to users_path, :notice => "Usuario Borrado."
+    else
+      redirect_to users_path, :notice => "No puede Borrarse usted mismo."
+    end
+  end
+end

@@ -1,0 +1,11 @@
+ <p id="notice"><%= notice %></p>
+
+<center>
+	<%= form_tag("/buscar", :method => "get") do %>
+
+	  <%= label_tag(:q, "") %>
+	  <%= text_field_tag(:q) %>
+	<p class="button"> <%= submit_tag("Buscar") %> </p>
+	
+<% end %> </center>
+

@@ -1,0 +1,5 @@
+<h3>Agregar Nuevo Termino</h3>
+
+<%= render 'form' %>
+
+

@@ -1,0 +1,15 @@
+Notificacion#contacto
+
+<%= @greeting %>, find me in app/views/app/views/notificacion/contacto.text.erb
+
+
+
+Hi!
+
+You are having one email message from <%= @email %> with a tilte 
+
+<%= @title %>
+and following is the message:
+<%= @message %>
+
+Thanks

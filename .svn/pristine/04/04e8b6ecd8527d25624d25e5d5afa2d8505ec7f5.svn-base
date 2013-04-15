@@ -1,0 +1,29 @@
+class Notificacion < ActionMailer::Base
+
+ default :from => 'informacion000@gmail.com'# => *1 
+
+  # Subject can be set in your I18n file at config/locales/en.yml
+  # with the following lookup:
+  #
+  #   en.notificacion.contacto.subject
+  #
+  # def contacto
+  #   @greeting = "Hi"
+
+  #   mail to: "to@example.org"
+  # end
+def sendmail
+        #Notificacion.contacto(recipient, subject, message,"informacion000@gmail.com").deliver
+       # mail :to => 'aleasam@gmail.com', :subject => "esto es un prueba" 
+
+       mail(:to => "aleasam@gmail.com", :subject => "Tiene un termino pendiente")
+ end
+
+
+  def contacto
+       mail(:to => 'aleasam@gmail.com', :subject=>'Esto es una pruebaaaa')
+	
+   end
+  	  
+  
+end

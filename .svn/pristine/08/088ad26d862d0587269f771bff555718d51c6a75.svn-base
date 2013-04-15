@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h2>Señor Experto </h2>
+    <h3>Usted Tiene <%=@solicitud.count%> Solicitudes Pendientes</h3>
+      <table class="table table-condensed"> 
+  <tr>
+    <th>Nombre</th>
+    <th>Fecha de solicitud</th>
+   
+  </tr>
+
+<% @solicitud.each do |solicitud| %>
+  <tr>
+    <td><%= solicitud.nombre %></td>
+    <td><%= solicitud.created_at.strftime("%d/%b/%Y") %></td>
+
+ </tr>
+
+<% end %>
+</table>
+  </body>
+</html>
