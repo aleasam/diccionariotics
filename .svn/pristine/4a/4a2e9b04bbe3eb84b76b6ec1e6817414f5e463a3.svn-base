@@ -1,0 +1,11 @@
+class NotificacionController < ApplicationController
+	def index
+      
+   end
+
+	def sendmail
+      Notificacion.contacto.deliver
+	 # Notificacion.deliver_contacto(recipient, subject, message)
+     end
+    
+end

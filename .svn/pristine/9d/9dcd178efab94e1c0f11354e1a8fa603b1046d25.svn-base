@@ -1,0 +1,26 @@
+Diccionario::Application.routes.draw do
+  
+
+  resources :solicitudes
+
+
+  get "solicitud/index"
+
+  authenticated :user do
+    root :to => 'users#index'
+    scope "admin" do
+	    resources :expertos
+
+	  	resources :categorias
+
+	  	resources :terminos
+	end
+
+
+  end
+  root :to => "home#index"
+  get "/buscar"=>"home#buscar"
+  get "/agregar"=>"home#agregar"
+  devise_for :users
+  resources :users
+end

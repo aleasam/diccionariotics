@@ -1,0 +1,16 @@
+
+ <p id="notice"><%= notice %></p>
+
+<center>
+	<%= form_tag("/buscar",:class=>"form-search", :method => "get") do %>
+<div class="input-append">
+	  <%= label_tag(:q, "")%>
+	  <%= text_field_tag(:q,:"",:class=>"span2 search-query") %>
+	  <%= submit_tag("Buscar", :class=>"btn btn-primary") %>  
+	  <i class="icon-search"></i>
+ </div>
+
+
+	
+<% end %> </center>
+

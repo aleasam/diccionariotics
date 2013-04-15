@@ -1,0 +1,4 @@
+class SolicitudController < ApplicationController
+  def index
+  end
+end

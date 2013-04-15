@@ -1,0 +1,39 @@
+<h1>Listar expertos</h1>
+
+<center><table border=1 cellspacing=0 cellpadding=2 bordercolor="666633">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Correo</th>
+    <th>Cargo</th>
+    <th>Psw</th>
+    <th>Created date</th>
+    <th>Updated date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @expertos.each do |experto| %>
+  <tr>
+    <td><%= experto.nombre %></td>
+    <td><%= experto.apellido %></td>
+    <td><%= experto.correo %></td>
+    <td><%= experto.cargo %></td>
+    <td><%= experto.psw %></td>
+    <td><%= experto.created_date %></td>
+    <td><%= experto.updated_date %></td>
+    <td><%= link_to 'Show', experto %></td>
+    <td><%= link_to 'Edit', edit_experto_path(experto) %></td>
+    <td><%= link_to 'Destroy', experto, method: :delete, data: { confirm: 'Esta seguro de Eliminar este experto?' } %></td>
+  </tr>
+<% end %>
+</table> </center>
+
+<br />
+
+<%= link_to 'Crear Nuevo Experto', new_experto_path %>
+<%= link_to 'Categorias', categorias_path %>
+<%= link_to 'Terminos', terminos_path %>
+<%= link_to 'Buscar termino', busqueda_index_path %>
+

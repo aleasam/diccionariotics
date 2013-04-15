@@ -1,0 +1,80 @@
+<%###### Inicio Normal users ######################3  %> 
+
+<%# Menu Inicio %>
+<ul class="nav nav-pills">
+  
+      <li class="active"><%= link_to "Inicio", root_path %></li>
+  
+</ul>
+
+<%# Menu Terminos %>
+<ul class="nav nav-pills">
+  <% if user_signed_in? %>
+    <li class="active">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Terminos <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+      	<li ><%= link_to ' Ver Terminos', terminos_path %></li>
+        <li ><%= link_to 'Nuevo Termino', new_termino_path %></li> 
+      </ul>
+  <% end %>
+</ul>
+<%#Fin de Menu Terminos %>
+<%##################################### %>
+<%# Menu Categorias  %>
+<ul class="nav nav-pills">
+  <% if user_signed_in? %>
+    <li class="active">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Categorias <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li ><%= link_to ' Ver Categorias', categorias_path %></li>
+        <li ><%= link_to 'Nuevo Termino', new_categoria_path %></li>
+      </ul> 
+  <% end %>
+</ul>
+
+
+<%#Fin Menu Categorias  %> 
+
+<%###### Fin  Normal users ######################3  %> 
+
+
+
+<%#Opciones de  Menu admin  %> 
+
+
+<%# Menu Expertos solo para el administrador %>
+<ul class="nav nav-pills">
+   <% if current_user.has_role? :admin %>
+    <li class="active">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Expertos <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li ><%= link_to ' Ver Expertos', expertos_path %></li>
+        <li ><%= link_to 'Nuevo Experto', new_experto_path %></li>
+      </ul> 
+<% end %>
+</ul>
+
+
+<%# Menu Categorias  %>
+<ul class="nav nav-pills">
+  <% if current_user.has_role? :admin %>
+      <li class="active"><%= link_to 'Admin Roles', users_path %></li>
+  <% end %>
+</ul>
+
+
+<ul class="nav nav-pills">
+  <% if current_user.has_role? :admin %>
+      <li class="active"><%= link_to 'Editar Cuenta', edit_user_registration_path %></li>
+  <% end %>
+</ul>
+
+<% if user_signed_in? %>
+    <li>
+    <%= link_to 'Salir', destroy_user_session_path, :method=>'delete' %>
+    </li>
+  <% end %>
+
+
+
+      

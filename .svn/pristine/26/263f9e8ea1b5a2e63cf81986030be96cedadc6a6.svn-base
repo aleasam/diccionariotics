@@ -1,0 +1,83 @@
+class ExpertosController < PrivadoController
+  # GET /expertos
+  # GET /expertos.json
+  def index
+    @expertos = Experto.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @expertos }
+    end
+  end
+
+  # GET /expertos/1
+  # GET /expertos/1.json
+  def show
+    @experto = Experto.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @experto }
+    end
+  end
+
+  # GET /expertos/new
+  # GET /expertos/new.json
+  def new
+    @experto = Experto.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @experto }
+    end
+  end
+
+  # GET /expertos/1/edit
+  def edit
+    @experto = Experto.find(params[:id])
+  end
+
+  # POST /expertos
+  # POST /expertos.json
+  def create
+    @experto = Experto.new(params[:experto])
+
+    respond_to do |format|
+      if @experto.save
+        format.html { redirect_to @experto, notice: 'Experto was successfully created.' }
+        format.json { render json: @experto, status: :created, location: @experto }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @experto.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /expertos/1
+  # PUT /expertos/1.json
+  def update
+    @experto = Experto.find(params[:id])
+
+    respond_to do |format|
+      if @experto.update_attributes(params[:experto])
+        format.html { redirect_to @experto, notice: 'Experto was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @experto.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /expertos/1
+  # DELETE /expertos/1.json
+  def destroy
+    @experto = Experto.find(params[:id])
+    @experto.destroy
+
+    respond_to do |format|
+      format.html { redirect_to expertos_url }
+      format.json { head :no_content }
+    end
+  end
+end

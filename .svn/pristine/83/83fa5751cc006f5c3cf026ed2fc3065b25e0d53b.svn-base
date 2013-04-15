@@ -1,0 +1,42 @@
+
+<form accept-charset="UTF-8" action="/buscar" method="get">
+  <center><label for="q">Termino a buscar :</label>
+  <input id="q" name="q" type="text" />
+  <input name="commit" type="submit" value="buscar" />
+</center></form>
+
+
+<h1>Listar categorias</h1>
+
+<center><table border=1 cellspacing=0 cellpadding=2 bordercolor="666633">
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion</th>
+    <th>Created date</th>
+    <th>Updated date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categorias.each do |categoria| %>
+  <tr>
+    <td><%= categoria.nombre %></td>
+    <td><%= categoria.descripcion %></td>
+    <td><%= categoria.created_date %></td>
+    <td><%= categoria.updated_date %></td>
+    <td><%= link_to 'Show', categoria %></td>
+    <td><%= link_to 'Edit', edit_categoria_path(categoria) %></td>
+    <td><%= link_to 'Destroy', categoria, method: :delete, data: { confirm: 'Esta seguro de eliminar esta categoria?' } %></td>
+  </tr>
+<% end %>
+</table>
+</center>
+
+<br />
+
+<%= link_to 'Crear nueva Categoria', new_categoria_path %>
+<%= link_to 'Terminos', terminos_path %>
+<%= link_to 'Expertos', expertos_path %>
+<%= link_to 'Buscar termino', busqueda_index_path %>
+

@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Administrador</title>
+	</head>
+	<body>
+	  <h1><center>ADMINISTRADOR</center></h1>
+	  	
+
+	<div class="span3 bs-docs-sidebar">
+	        <ul class="nav nav-list bs-docs-sidenav affix-top">
+	          <li class=""><a href=""><i class="icon-chevron-right"></i> Terminos</a></li>
+	          <li class=""><a href="#code"><i class="icon-chevron-right"></i> Categorias</a></li>
+	          <li class=""><a href="#tables"><i class="icon-chevron-right"></i> Expertos</a></li>
+	        </ul>
+	</div>

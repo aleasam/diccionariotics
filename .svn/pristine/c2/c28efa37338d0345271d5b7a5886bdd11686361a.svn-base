@@ -1,0 +1,6 @@
+class AdministradorController < ApplicationController
+	before_filter :authenticate_user!
+  def index
+  	@terminos=Termino.all
+  end
+end

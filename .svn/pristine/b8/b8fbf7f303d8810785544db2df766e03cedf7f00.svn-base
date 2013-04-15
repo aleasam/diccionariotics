@@ -1,0 +1,24 @@
+
+<p id="notice"><%=notice%></p>
+<div align="center">  
+
+<center><table border=0 cellspacing=0 cellpadding=2 bordercolor="666633">
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion r</th>
+    <th>Descripcion d</th>
+    
+      
+  </tr>
+ 
+<% @terminos.each do |termino| %>
+  <tr>
+    <td><%= termino.nombre %></td>
+    <td><%= termino.descripcion_r %></td>
+    <td><%= termino.descripcion_d %></td>
+  
+  </tr>
+<% end %>
+</table></center>
+
+</div>
