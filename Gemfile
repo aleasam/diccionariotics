@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.11'
+gem "pg"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -22,4 +23,3 @@ gem "binding_of_caller", ">= 0.6.8", :group => :development
 gem "libv8", ">= 3.11.8"
 gem "therubyracer", ">= 0.11.3", :group => :assets, :platform => :ruby, :require => "v8"
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
-gem "pg"
