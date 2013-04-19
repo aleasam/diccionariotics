@@ -1,6 +1,0 @@
-Señor  Experto
- 
-      Usted tiene un <%=@Solicitud.count %> solicitudes  pendientes para aprobación
-  
-    
-  
