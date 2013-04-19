@@ -1,0 +1,102 @@
+2013-04-16T20:26:55.473083+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.11/lib/rails/railtie/configurable.rb:30:in `method_missing'
+2013-04-16T20:26:55.473313+00:00 app[web.1]: 
+2013-04-16T20:26:55.473313+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/bin/thin:19:in `<main>'
+2013-04-16T20:26:55.473313+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/thin-1.5.0/lib/thin/controllers/controller.rb:86:in `start'
+2013-04-16T20:26:55.473083+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/thin-1.5.0/lib/thin/connection.rb:39:in `receive_data'
+2013-04-16T20:29:25.895580+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.14, 200.110.171.210" dyno=web.1 connect=1ms service=11ms status=200 bytes=2450
+2013-04-16T20:29:25.891346+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:29:25 +0000
+2013-04-16T20:29:29.211027+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.14, 200.110.171.210" dyno=web.1 connect=3ms service=11ms status=200 bytes=35745
+2013-04-16T20:29:30.659664+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.14, 200.110.171.210" dyno=web.1 connect=1ms service=7ms status=200 bytes=49339
+2013-04-16T20:29:31.420946+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=diccionariotics.herokuapp.com fwd="10.1.1.14, 200.110.171.210" dyno=web.1 connect=1ms service=3ms status=200 bytes=0
+2013-04-16T20:29:57.039591+00:00 app[web.1]: Started GET "/buscar?utf8=%E2%9C%93&q=blog&commit=Buscar" for 200.110.171.210 at 2013-04-16 20:29:57 +0000
+2013-04-16T20:29:57.047030+00:00 heroku[router]: at=info method=GET path=/buscar?utf8=%E2%9C%93&q=blog&commit=Buscar host=diccionariotics.herokuapp.com fwd="10.1.1.14, 200.110.171.210" dyno=web.1 connect=5ms service=14ms status=200 bytes=3670
+2013-04-16T20:30:19.676743+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:30:19 +0000
+2013-04-16T20:30:19.679272+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=11ms status=200 bytes=2450
+2013-04-16T20:30:19.919241+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-04-16T20:30:19.923243+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=4ms status=304 bytes=0
+2013-04-16T20:30:25.479832+00:00 app[web.1]: Started GET "/buscar?utf8=%E2%9C%93&q=Portatil&commit=Buscar" for 200.110.171.210 at 2013-04-16 20:30:25 +0000
+2013-04-16T20:30:25.517355+00:00 heroku[router]: at=info method=GET path=/buscar?utf8=%E2%9C%93&q=Portatil&commit=Buscar host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=39ms status=200 bytes=2791
+2013-04-16T20:30:26.271022+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=2ms status=304 bytes=0
+2013-04-16T20:30:26.480657+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-04-16T20:30:28.530172+00:00 app[web.1]: Started POST "/solicitudes" for 200.110.171.210 at 2013-04-16 20:30:28 +0000
+2013-04-16T20:30:30.021548+00:00 heroku[router]: at=info method=POST path=/solicitudes host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=1509ms status=302 bytes=103
+2013-04-16T20:30:30.018230+00:00 app[web.1]: 
+2013-04-16T20:30:30.018230+00:00 app[web.1]: Sent mail to aleasam@gmail.com (1143ms)
+2013-04-16T20:30:30.246406+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=12ms status=200 bytes=2639
+2013-04-16T20:30:30.244189+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:30:30 +0000
+2013-04-16T20:30:30.498899+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-04-16T20:30:30.726447+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-04-16T20:33:23.982090+00:00 app[web.1]: Started GET "/buscar?utf8=%E2%9C%93&q=tablet&commit=Buscar" for 200.110.171.210 at 2013-04-16 20:33:23 +0000
+2013-04-16T20:33:24.001415+00:00 heroku[router]: at=info method=GET path=/buscar?utf8=%E2%9C%93&q=tablet&commit=Buscar host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=5ms service=26ms status=200 bytes=2789
+2013-04-16T20:33:24.422766+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=4ms service=39ms status=304 bytes=0
+2013-04-16T20:33:24.671973+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=4ms service=81ms status=304 bytes=0
+2013-04-16T20:33:24.902147+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=4ms service=13ms status=304 bytes=0
+2013-04-16T20:33:25.759029+00:00 app[web.1]: Started POST "/solicitudes" for 200.110.171.210 at 2013-04-16 20:33:25 +0000
+2013-04-16T20:33:26.154045+00:00 app[web.1]: 
+2013-04-16T20:33:26.154045+00:00 app[web.1]: Sent mail to aleasam@gmail.com (318ms)
+2013-04-16T20:33:26.163644+00:00 heroku[router]: at=info method=POST path=/solicitudes host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=412ms status=302 bytes=103
+2013-04-16T20:33:26.390715+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:33:26 +0000
+2013-04-16T20:33:26.404088+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=22ms status=200 bytes=2637
+2013-04-16T20:33:26.759910+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=5ms status=304 bytes=0
+2013-04-16T20:33:26.771767+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=3ms status=304 bytes=0
+2013-04-16T20:36:22.627677+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:36:22 +0000
+2013-04-16T20:36:22.640289+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.64, 200.110.171.210" dyno=web.1 connect=4ms service=19ms status=200 bytes=2450
+2013-04-16T20:36:28.699176+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionari
+otics.herokuapp.com fwd="10.1.1.64, 200.110.171.210" dyno=web.1 connect=0ms service=3ms status=200 bytes=35745
+2013-04-16T20:36:28.920545+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.64, 200.110.171.210" dyno=web.1 connect=0ms service=3ms status=200 bytes=49339
+2013-04-16T20:36:46.448866+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:36:46 +0000
+2013-04-16T20:36:46.450932+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.64, 200.110.171.210" dyno=web.1 connect=1ms service=8ms status=304 bytes=0
+2013-04-16T20:36:50.872740+00:00 app[web.1]: Started GET "/users/sign_in" for 200.110.171.210 at 2013-04-16 20:36:50 +0000
+2013-04-16T20:36:50.879535+00:00 heroku[router]: at=info method=GET path=/users/sign_in host=diccionariotics.herokuapp.com fwd="10.1.1.64, 200.110.171.210" dyno=web.1 connect=2ms service=13ms status=200 bytes=3278
+2013-04-16T20:37:29.538697+00:00 app[web.1]: Started GET "/users/sign_in" for 200.110.171.210 at 2013-04-16 20:37:29 +0000
+2013-04-16T20:37:29.545676+00:00 heroku[router]: at=info method=GET path=/users/sign_in host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=14ms status=200 bytes=3278
+2013-04-16T20:37:30.538900+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
+2013-04-16T20:37:30.580936+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=5ms service=8ms status=304 bytes=0
+2013-04-16T20:37:36.692553+00:00 app[web.1]: Started POST "/users/sign_in" for 200.110.171.210 at 2013-04-16 20:37:36 +0000
+2013-04-16T20:37:36.941716+00:00 heroku[router]: at=info method=POST path=/users/sign_in host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=257ms status=302 bytes=103
+2013-04-16T20:37:37.134845+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:37:37 +0000
+2013-04-16T20:37:37.430499+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=302ms status=200 bytes=4008
+2013-04-16T20:37:37.676266+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png" for 200.110.171.210 at 2013-04-16 20:37:37 +0000
+2013-04-16T20:37:37.673129+00:00 heroku[router]: at=info method=GET path=/assets/glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=9ms status=200 bytes=8777
+2013-04-16T20:37:37.668821+00:00 app[web.1]: Started GET "/assets/glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png" for 200.110.171.210 at 2013-04-16 20:37:37 +0000
+2013-04-16T20:37:37.680877+00:00 heroku[router]: at=info method=GET path=/assets/glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=18ms status=200 bytes=12799
+2013-04-16T20:37:37.787802+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-04-16T20:37:37.945091+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-04-16T20:37:45.941654+00:00 heroku[router]: at=info method=GET path=/users/edit host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=28ms status=200 bytes=5042
+2013-04-16T20:37:46.165088+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=3ms status=304 bytes=0
+2013-04-16T20:37:46.141152+00:00 app[web.1]: Started GET "/users/edit" for 200.110.171.210 at 2013-04-16 20:37:45 +0000
+2013-04-16T20:37:46.164914+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-04-16T20:38:01.977396+00:00 heroku[router]: at=info method=POST path=/users host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=200ms status=302 bytes=103
+2013-04-16T20:38:02.003075+00:00 app[web.1]: Started PUT "/users" for 200.110.171.210 at 2013-04-16 20:38:01 +0000
+2013-04-16T20:38:02.177921+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:38:02 +0000
+2013-04-16T20:38:02.195727+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=25ms status=200 bytes=4035
+2013-04-16T20:38:02.410674+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-04-16T20:38:02.422875+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=5ms service=8ms status=304 bytes=0
+2013-04-16T20:38:02.732770+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=116ms status=304 bytes=0
+2013-04-16T20:38:19.446789+00:00 app[web.1]: Started GET "/admin/terminos" for 200.110.171.210 at 2013-04-16 20:38:19 +0000
+2013-04-16T20:38:19.625838+00:00 heroku[router]: at=info method=GET path=/admin/terminos host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=185ms status=200 bytes=27312
+2013-04-16T20:38:20.547715+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=2ms status=304 bytes=0
+2013-04-16T20:38:20.527326+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-04-16T20:38:28.756976+00:00 app[web.1]: Started GET "/admin/categorias" for 200.110.171.210 at 2013-04-16 20:38:28 +0000
+2013-04-16T20:38:28.785169+00:00 heroku[router]: at=info method=GET path=/admin/categorias host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=34ms status=200 bytes=8817
+2013-04-16T20:38:29.003542+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-04-16T20:38:29.191236+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=1ms status=304 bytes=0
+2013-04-16T20:38:35.625512+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:38:35 +0000
+2013-04-16T20:38:35.642183+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=4ms service=24ms status=200 bytes=3858
+2013-04-16T20:38:35.878558+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=8ms status=304 bytes=0
+2013-04-16T20:38:35.889132+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=0ms service=8ms status=304 bytes=0
+2013-04-16T20:44:05.892976+00:00 app[web.1]: Started DELETE "/users/sign_out" for 200.110.171.210 at 2013-04-16 20:44:05 +0000
+2013-04-16T20:44:06.793174+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:44:06 +0000
+2013-04-16T20:44:06.801153+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=5ms service=18ms status=200 bytes=2625
+2013-04-16T20:44:07.415037+00:00 heroku[router]: at=info method=GET path=/images/APPTITUD-logo-01.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=5ms service=14ms status=304 bytes=0
+2013-04-16T20:44:07.627721+00:00 heroku[router]: at=info method=GET path=/images/parque.png host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=10ms status=304 bytes=0
+2013-04-16T20:44:07.957081+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=3ms service=12ms status=304 bytes=0
+2013-04-16T20:44:05.948452+00:00 heroku[router]: at=info method=POST path=/users/sign_out host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=15ms service=69ms status=302 bytes=103
+2013-04-16T20:44:31.862503+00:00 app[web.1]: Started GET "/buscar?utf8=%E2%9C%93&q=Smartphone&commit=Buscar" for 200.110.171.210 at 2013-04-16 20:44:31 +0000
+2013-04-16T20:44:31.959966+00:00 heroku[router]: at=info method=GET path=/buscar?utf8=%E2%9C%93&q=Smartphone&commit=Buscar host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=2ms service=105ms status=200 bytes=2793
+2013-04-16T20:44:34.537510+00:00 app[web.1]: Started POST "/solicitudes" for 200.110.171.210 at 2013-04-16 20:44:34 +0000
+2013-04-16T20:44:35.034144+00:00 app[web.1]: 
+2013-04-16T20:44:35.034144+00:00 app[web.1]: Sent mail to aleasam@gmail.com (447ms)
+2013-04-16T20:44:35.035338+00:00 heroku[router]: at=info method=POST path=/solicitudes host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=505ms status=302 bytes=103
+2013-04-16T20:44:35.403251+00:00 app[web.1]: Started GET "/" for 200.110.171.210 at 2013-04-16 20:44:35 +0000
+2013-04-16T20:44:35.407416+00:00 heroku[router]: at=info method=GET path=/ host=diccionariotics.herokuapp.com fwd="10.1.1.174, 200.110.171.210" dyno=web.1 connect=1ms service=12ms status=200 bytes=2641

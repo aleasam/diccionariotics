@@ -23,28 +23,28 @@
        <%# raise "Punto de prueba #{@termino.nombre}" %>
   </div>
   <div class="field">
-    <%= f.label :descripcion_r %>
+    <%= f.label "Descripcion Resumida del Termino" %>
     <%= f.text_field :descripcion_r %><br />
   </div>
   <div class="field">
-    <%= f.label :descripcion_d %>
+    <%= f.label "Descripcion Detallada del Termino"  %>
     <%= f.text_field :descripcion_d %><br />
   </div>
   <div class="field">
-    <%= f.label :categoria_id %>
+    <%= f.label "Categoria a la que pertenece el Termino"  %>
     <%= f.collection_select(:categoria_id,Categoria.all, :id, :nombre) %><br />
     
   </div>
   <div class="field">
-    <%= f.label :user_id %>
+    <%= f.label "Usuario que lo crea" %>
     <%= f.collection_select(:user_id,User.all, :id, :name) %><br />
   </div>
   <div class="field">
-    <%= f.label :Fecha_De_Creacion %>
+    <%= f.label "Fecha de Creacion" %>
     <%= f.date_select :created_date %><br />
   </div>
   <div class="field">
-    <%= f.label :Fecha_De_Actualizacion %>
+    <%= f.label "Fecha de Actualizacion" %>
     <%= f.date_select :updated_date %><br />
   </div>
   <div class="actions">

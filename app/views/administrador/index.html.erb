@@ -1,10 +1,11 @@
 
 <%if @solicitudes.count==0%>
-  <h3>Usted no tiene solicitudes pendientes</h3>
+  <i><h3 class="text-success">Usted no tiene solicitudes pendientes</h3></i>
 <%else%>
 
-<h3>Usted Tiene <%=@solicitudes.count%> Solicitudes Pendientes</h3>
+<h3 class="text-info">Usted Tiene <%=@solicitudes.count%> Solicitudes Pendientes</h3>
 <center>
+
  <table class="table table-condensed"> 
   <tr>
     <th>Nombre</th>
