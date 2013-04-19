@@ -5,12 +5,12 @@
 <center><table class="table table-bordered">
   <tr>
     <th>Nombre</th>
-    <th>Descripcion r</th>
-    <th>Descripcion d</th>
-    <th>Categoria</th>
+    <th>Descripcion Resumida</th>
+    <th>Descripcion Detallada</th>
+    <th>Categoria al que pertence</th>
     <th>Experto</th>
-    <th>Created date</th>
-    <th>Updated date</th>
+    <th>Fecha creacion</th>
+    <th>última actualización</th>
     <th></th>
   </tr>
 
@@ -19,8 +19,8 @@
     <td><%= termino.nombre %></td>
     <td><%= termino.descripcion_r %></td>
     <td><%= termino.descripcion_d %></td>
-    <td><%= termino.categoria_id %></td>
-    <td><%= termino.user_id %></td>
+    <td><%= termino.categoria.nombre %></td>
+    <td><%= termino.user.name %></td>
     <td><%= termino.created_date %></td>
     <td><%= termino.updated_date %></td>
     <td class="btn btn-mini"><%= link_to 'Editar', edit_termino_path(termino) %></td>
