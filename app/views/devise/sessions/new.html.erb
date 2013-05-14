@@ -1,3 +1,4 @@
+<div class="inicio">
 <h4>Iniciar Sesión</h4>
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name),:html => {:class => 'form-vertical' }) do |f| %>
   <%= f.input :email, :autofocus => true %>
@@ -9,3 +10,4 @@
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' %>
   <%= link_to "¿olvido su contraseña?", new_password_path(resource_name) %><br />
 <% end -%>
+</div>
